@@ -4,33 +4,33 @@ A full-stack application to manage candidates with functionalities to add, edit,
 
 Table of Contents
 
-    - Features
-    
-    - Technologies Used
-    
-    - Project Structure
-    
-    - Backend Setup
-    
-            - Environment Variables
-            
-            - Install Dependencies
-            
-            - Run Server
-            
-            - API Documentation
-    
-    - Frontend Setup
-    
-            - Install Dependencies
-            
-            - Run Frontend
-    
-    - Unit Testing
-    
-    - Folder Structure
-    
-    - Future Improvements
+- Features
+
+- Technologies Used
+
+- Project Structure
+
+- Backend Setup
+
+        - Environment Variables
+        
+        - Install Dependencies
+        
+        - Run Server
+        
+        - API Documentation
+
+- Frontend Setup
+
+        - Install Dependencies
+        
+        - Run Frontend
+
+- Unit Testing
+
+- Folder Structure
+
+- Future Improvements
 
 **Features**
 - First item
