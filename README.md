@@ -77,7 +77,6 @@ Testing:
 
 - Supertest (for backend testing)
 
-Project Structure
 candidate-management-system/
 │
 ├── backend/
@@ -104,6 +103,7 @@ candidate-management-system/
 │   └── public/
 │
 └── README.md
+
 
 Backend Setup
 Environment Variables
