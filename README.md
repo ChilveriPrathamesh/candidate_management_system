@@ -1,8 +1,8 @@
-**Candidate Management System**
+## **Candidate Management System**
 
 A full-stack application to manage candidates with functionalities to add, edit, view, and delete candidates. It includes a React frontend and a Node.js/Express backend connected to a MySQL database, along with Swagger API documentation.
 
-Table of Contents
+## Table of Contents
 
 - Features
 
@@ -32,7 +32,7 @@ Table of Contents
 
 - Future Improvements
 
-**Features**
+## **Features**
 
 
 - View all candidates in a table.
@@ -49,7 +49,7 @@ Table of Contents
 
 - Unit tests for frontend components and backend endpoints.
 
-**Technologies Used**
+## **Technologies Used**
 
 Frontend:
 
@@ -82,31 +82,31 @@ Testing:
 
 
 candidate-management-system/
-│
 ├── backend/
-│   ├── controllers/
-│   │   └── candidateController.js
-│   ├── models/
-│   │   └── candidateModel.js
-│   ├── routes/
-│   │   └── candidateRoutes.js
-│   ├── config/
-│   │   └── db.js
-│   ├── swagger.js
-│   ├── server.js
-│   └── package.json
+│ ├── controllers/
+│ │ └── candidateController.js
+│ ├── models/
+│ │ └── candidateModel.js
+│ ├── routes/
+│ │ └── candidateRoutes.js
+│ ├── config/
+│ │ ├── db.js
+│ │ └── swagger.js
+│ ├── server.js
+│ └── package.json
 │
 ├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── CandidateForm.js
-│   │   │   └── CandidateList.js
-│   │   ├── App.js
-│   │   └── index.js
-│   ├── package.json
-│   └── public/
-├── database/        
-│       └── schema.sql
+│ └── src/
+│ ├── components/
+│ │ ├── CandidateForm.js
+│ │ └── CandidateList.js
+│ ├── App.js
+│ └── index.js
+│ ├── public/
+│ └── package.json
+│
+├── database/
+│ └── schema.sql
 │
 └── README.md
 
