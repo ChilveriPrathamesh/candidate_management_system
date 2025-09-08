@@ -33,52 +33,49 @@ Table of Contents
 - Future Improvements
 
 **Features**
-- First item
-- Second item
-- Third item
 
 
 - View all candidates in a table.
 
-Add new candidates with details: name, email, phone number, status, and resume link.
+- Add new candidates with details: name, email, phone number, status, and resume link.
 
-Edit existing candidate details.
+- Edit existing candidate details.
 
-Delete candidates.
+- Delete candidates.
 
-RESTful API endpoints.
+- RESTful API endpoints.
 
-Swagger API documentation.
+- Swagger API documentation.
 
-Unit tests for frontend components and backend endpoints.
+- Unit tests for frontend components and backend endpoints.
 
-Technologies Used
+**Technologies Used**
 
 Frontend:
 
-React.js
+- React.js
 
-React Router
+- React Router
 
-CSS / Bootstrap
+- CSS / Bootstrap
 
 Backend:
 
-Node.js
+- Node.js
 
-Express.js
+- Express.js
 
-MySQL
+- MySQL
 
-Swagger (OpenAPI 3.0)
+- Swagger (OpenAPI 3.0)
 
 Testing:
 
-Jest
+- Jest
 
-React Testing Library
+- React Testing Library
 
-Supertest (for backend testing)
+- Supertest (for backend testing)
 
 Project Structure
 candidate-management-system/
