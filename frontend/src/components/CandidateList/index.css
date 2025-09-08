@@ -1,0 +1,110 @@
+/* Container */
+
+.candidate-list-container{
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial , sans-serif;
+}
+
+/* Header */
+.candidate-list-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.candidate-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/*Add Button */
+.candidate-list-add-btn{
+    padding: 10px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.candidate-list-add-btn:hover{
+    background-color: #218838;
+}
+
+/* Table Styles */
+.candidate-list-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.candidate-list-table th , .candidate-list-table td{
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.candidate-list-table th{
+    background-color: #f4f6f9;
+    font-weight: bold;
+    color: #444;
+}
+
+.candidate-list-table tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+.candidate-list-table tr:hover{
+    background-color: #f1f1f1;
+}
+/* Action Buttons */
+
+.candidate-list-edit-btn, .candidate-list-delete-btn{
+    padding: 6px 12px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 13px;
+}
+
+.candidate-list-edit-btn{
+    background-color: #007bff;
+    color: white;
+}
+
+.candidate-list-edit-btn:hover{
+    background-color: #0056b3;
+}   
+
+.candidate-list-delete-btn{
+    background-color: #dc3545;
+    color: white;
+}
+.candidate-list-delete-btn:hover{
+    background-color: #c82333;
+}
+
+/* Resume Link */
+
+.candidate-list-link{
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}   
+
+.candidate-list-link:hover{
+    text-decoration: underline;
+}
