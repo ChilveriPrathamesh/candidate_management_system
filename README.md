@@ -77,6 +77,8 @@ Testing:
 
 - Supertest (for backend testing)
 
+**Project Structure**
+
 candidate-management-system/
 │
 ├── backend/
@@ -101,6 +103,8 @@ candidate-management-system/
 │   │   └── index.js
 │   ├── package.json
 │   └── public/
+├── database/        
+│       └── schema.sql
 │
 └── README.md
 
