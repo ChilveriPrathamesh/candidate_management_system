@@ -77,7 +77,9 @@ Testing:
 
 - Supertest (for backend testing)
 
-**Project Structure**
+## Project Structure
+
+
 
 candidate-management-system/
 │
@@ -107,6 +109,7 @@ candidate-management-system/
 │       └── schema.sql
 │
 └── README.md
+
 
 
 Backend Setup
