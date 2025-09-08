@@ -1,0 +1,51 @@
+const Candidate = require('../models/candidateModel.js');
+
+//GET all candidates 
+const getCandidates = async (req , res) => {
+    try {
+        const candidates = await Candidate.getAllCandidates() ;
+        res.status(200).json(candidates)
+    } catch (error) {
+        res.status(500).json({error : error.message})
+    }
+}
+
+//CREATE a new candidate 
+const createCandidate = async (req , res) => {
+    try {
+        const newCandidate = await Candidate.addCandidate(req.body);
+        res.status(201).json(newCandidate);
+    } catch(error) {
+        res.status(500).json({error : error.message})
+    }
+}
+
+//UPDATE an existing candidate 
+
+const editCandidate = async (req, res) => {
+    try {
+        const updated = await Candidate.updateCandidate(req.params.id , req.body) ;
+        res.status(200).json(updated);
+    } catch(error) {
+        res.status(500).json({error : error.message});
+    }
+}
+
+// DELETE a candidate 
+
+const removeCandidate = async (req, res) => {
+    try {
+        const result = await Candidate.deleteCandidate(req.params.id) ;
+        res.status(200).json(result) ;
+    }
+    catch(error) {
+        res.status(500).json({error : error.message}) ;
+    }
+}
+
+module.exports = {
+    getCandidates ,
+    createCandidate , 
+    editCandidate , 
+    removeCandidate
+}
