@@ -12,19 +12,19 @@ Table of Contents
     
     - Backend Setup
     
-    - Environment Variables
-    
-    - Install Dependencies
-    
-    - Run Server
-    
-    - API Documentation
+            - Environment Variables
+            
+            - Install Dependencies
+            
+            - Run Server
+            
+            - API Documentation
     
     - Frontend Setup
     
-    - Install Dependencies
-    
-    - Run Frontend
+            - Install Dependencies
+            
+            - Run Frontend
     
     - Unit Testing
     
@@ -32,9 +32,13 @@ Table of Contents
     
     - Future Improvements
 
-Features
+**Features**
+- First item
+- Second item
+- Third item
 
-View all candidates in a table.
+
+- View all candidates in a table.
 
 Add new candidates with details: name, email, phone number, status, and resume link.
 
