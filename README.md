@@ -79,78 +79,76 @@ Testing:
 
 ## Project Structure
 
+**Root Folder**
+- `backend/` — Contains all backend server files
+  - `controllers/` — Handles business logic  
+    - `candidateController.js`
+  - `models/` — Database models  
+    - `candidateModel.js`
+  - `routes/` — API routes  
+    - `candidateRoutes.js`
+  - `config/` — Configuration files  
+    - `db.js` — Database connection
+    - `swagger.js` — API documentation setup
+  - `server.js` — Entry point for the backend server
+  - `package.json` — Backend dependencies
 
+- `frontend/` — Contains React frontend
+  - `src/`
+    - `components/` — React components  
+      - `CandidateForm.js`  
+      - `CandidateList.js`
+    - `App.js` — Main application component
+    - `index.js` — React DOM render file
+  - `public/` — Static assets
+  - `package.json` — Frontend dependencies
 
-candidate-management-system/
-├── backend/
-│ ├── controllers/
-│ │ └── candidateController.js
-│ ├── models/
-│ │ └── candidateModel.js
-│ ├── routes/
-│ │ └── candidateRoutes.js
-│ ├── config/
-│ │ ├── db.js
-│ │ └── swagger.js
-│ ├── server.js
-│ └── package.json
-│
-├── frontend/
-│ └── src/
-│ ├── components/
-│ │ ├── CandidateForm.js
-│ │ └── CandidateList.js
-│ ├── App.js
-│ └── index.js
-│ ├── public/
-│ └── package.json
-│
-├── database/
-│ └── schema.sql
-│
-└── README.md
+- `database/` — SQL scripts  
+  - `schema.sql` — Database schema
+
+- `README.md` — Project documentation
 
 
 
-Backend Setup
-Environment Variables
+## Backend Setup
+**Environment Variables**
 
 Create a .env file in the backend folder:
 
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_password
-DB_NAME=candidate_db
-PORT=5000
+        DB_HOST=localhost
+        DB_USER=root
+        DB_PASSWORD=your_password
+        DB_NAME=candidate_db
+        PORT=5000
 
 
-Replace your_password with your MySQL password.
+Replace **your_password** with your MySQL password.
 
-Install Dependencies
-cd backend
-npm install
+## Install Dependencies
+        cd backend
+        npm install
 
 
-Dependencies include:
+**Dependencies include:**
 
-express
+- express
 
-mysql2
+- mysql2
 
-body-parser
+- body-parser
 
-cors
+- cors
 
-dotenv
+- dotenv
 
-swagger-jsdoc
+- swagger-jsdoc
 
-swagger-ui-express
+- swagger-ui-express
 
-nodemon (for development)
+- nodemon (for development)
 
-Run Server
-npm start
+**Run Server**
+        npm start
 
 
 Server runs on http://localhost:5000.
@@ -159,100 +157,100 @@ Default API route: http://localhost:5000/
 
 Swagger docs: http://localhost:5000/api-docs
 
-API Documentation (Swagger)
+**API Documentation (Swagger)**
 
 Swagger UI automatically generates documentation for your endpoints.
 
 Example endpoints:
 
-GET /api/candidates → Get all candidates
+- GET /api/candidates → Get all candidates
 
-POST /api/candidates → Add a new candidate
+- POST /api/candidates → Add a new candidate
 
-PUT /api/candidates/:id → Update candidate by ID
+- PUT /api/candidates/:id → Update candidate by ID
 
-DELETE /api/candidates/:id → Delete candidate by ID
+- DELETE /api/candidates/:id → Delete candidate by ID
 
-Frontend Setup
-Install Frontend Dependencies
-cd frontend
-npm install
+## Frontend Setup
+**Install Frontend Dependencies**
+        cd frontend
+        npm install
 
-Run Frontend
-npm start
+**Run Frontend**
+        npm start
 
 
 Frontend runs on http://localhost:3000.
 
 Navigation:
 
-/ → Candidate List
+- / → Candidate List
 
-/add → Add Candidate Form
+- /add → Add Candidate Form
 
-/edit/:id → Edit Candidate Form
+- /edit/:id → Edit Candidate Form
 
 Frontend connects to backend API running on http://localhost:5000/api/candidates.
 
-Unit Testing
-Frontend
+## Unit Testing
+**Frontend**
 
-Uses Jest and React Testing Library.
+- Uses Jest and React Testing Library.
 
-Tests individual components and form functionality.
+- Tests individual components and form functionality.
 
 Example: CandidateForm.test.js
 
-Check input fields render correctly.
+- Check input fields render correctly.
 
-Test state changes when input changes.
+- Test state changes when input changes.
 
-Mock API call to verify POST request.
+- Mock API call to verify POST request.
 
 Run frontend tests:
 
-npm test
+        npm test
 
 Backend (Optional)
 
-Use Jest + Supertest.
+- Use Jest + Supertest.
 
-Test API endpoints for expected behavior.
+- Test API endpoints for expected behavior.
 
-Example: POST request adds a candidate, GET request retrieves candidates.
+- Example: POST request adds a candidate, GET request retrieves candidates.
 
-Folder Structure Explanation
+## **Folder Structure Explanation**
 
-Backend:
+**Backend:**
 
-server.js → Main server entry point.
+- server.js → Main server entry point.
 
-controllers/ → Handle API logic.
+- controllers/ → Handle API logic.
 
-models/ → Database queries.
+- models/ → Database queries.
 
-routes/ → Route definitions.
+- routes/ → Route definitions.
 
-swagger.js → API documentation setup.
+- swagger.js → API documentation setup.
 
-config/db.js → MySQL database connection.
+- config/db.js → MySQL database connection.
 
-Frontend:
+**Frontend:**
 
-components/ → React components for UI.
+- components/ → React components for UI.
 
-App.js → Routes setup.
+- App.js → Routes setup.
 
-index.js → Main render file.
+- index.js → Main render file.
 
-Future Improvements
+## Future Improvements
 
-Add authentication for admin and users.
+- Add authentication for admin and users.
 
-Integrate Redux for state management.
+- Integrate Redux for state management.
 
-Add pagination and search for candidate list.
+- Add pagination and search for candidate list.
 
-Add file upload for resumes instead of URLs.
+- Add file upload for resumes instead of URLs.
 
-Add backend validation for form inputs.
+- Add backend validation for form inputs.
